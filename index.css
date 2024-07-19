@@ -1,0 +1,134 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  body.light-mode {
+    background: linear-gradient(135deg, #f5f5f5, #ddd);
+    color: black;
+  }
+  
+  body.dark-mode {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+  }
+  
+  .container {
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    transition: background 0.3s, color 0.3s;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+  }
+  
+  .container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+  
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .input-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+    outline: none;
+  }
+  
+  .input-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .input-container button:hover {
+    background: #45a049;
+  }
+  
+  .mode-container {
+    margin-bottom: 20px;
+  }
+  
+  .mode-container input[type="checkbox"] {
+    display: none;
+  }
+  
+  .mode-container label {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .mode-container label:hover {
+    background: #555;
+  }
+  
+  ol {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+  }
+  
+  li:hover {
+    transform: scale(1.02);
+  }
+  
+  li .delete-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    background-color: #f44336;
+    color: white;
+  }
+  
+  li .delete-button:hover {
+    background-color: #da190b;
+  }
+  
+  li .delete-button:active {
+    transform: scale(0.95);
+  }
+  
